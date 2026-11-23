@@ -107,6 +107,6 @@ El sistema administra la relación entre **Estudiantes**, **Proyectos**, **Comun
 
 <div align="center">
 
-###  UPAEP - Centro de Impacto e Integración Social (CIIS)
+###  UPAEP - Centro de Impacto e Impacto Social (CIIS)
 
 </div>
