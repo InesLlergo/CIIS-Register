@@ -10,7 +10,7 @@
 
 ---
 
-### 📌 *App de seguimiento de proyectos de impacto social, estudiantes, aliados y mentorías del Centro de Innovación e Impacto Social (CIIS) UPAEP.*
+### *App de seguimiento de proyectos de impacto social, estudiantes, aliados y mentorías del Centro de Innovación e Impacto Social (CIIS) UPAEP.*
 
 **Versión móvil del sitio web `ciis-web`:** mismo modelo de datos, mismos roles (coordinación, alumno y aliado) y mismos reportes.
 
@@ -26,7 +26,7 @@
 
 ---
 
-## 📑 Contenido
+## Contenido
 
 1. [Planteamiento del problema](#-1-planteamiento-del-problema)
 2. [Para qué sirve la app](#-2-para-qué-sirve-la-app-y-por-qué-ayuda)
@@ -48,13 +48,13 @@
 
 ---
 
-## 🧩 1. Planteamiento del problema
+## 1. Planteamiento del problema
 
 El CIIS UPAEP incuba y acompaña proyectos de impacto social en los que participan estudiantes de programas institucionales de liderazgo y becas (BL-UAF, UAF, Beca Liderazgo, voluntariado…). Concentra información de **estudiantes, coordinadores, mentores, beneficiarios y aliados**.
 
 Antes, esa información estaba dispersa. Era difícil saber cuánto había avanzado cada proyecto, quién lo apoyaba, qué mentorías se habían dado y qué evidencias había del trabajo en las comunidades.
 
-## 🎯 2. Para qué sirve la app (y por qué ayuda)
+## 2. Para qué sirve la app (y por qué ayuda)
 
 | Rol | Qué hace en la app |
 | :--- | :--- |
@@ -63,7 +63,7 @@ Antes, esa información estaba dispersa. Era difícil saber cuánto había avanz
 | 🤝 **Aliado** | Empresas, fundaciones o gobierno: ve el avance de los proyectos que apoya y puede apoyar proyectos nuevos. |
 | 🌐 **Público** | Catálogo de proyectos y sus evidencias, sin iniciar sesión. |
 
-> 💡 Con la app, la información se captura **en el momento y desde el teléfono**: el alumno toma la foto en la comunidad y queda registrada al instante, y la coordinación tiene los datos listos para sus reportes.
+> Con la app, la información se captura **en el momento y desde el teléfono**: el alumno toma la foto en la comunidad y queda registrada al instante, y la coordinación tiene los datos listos para sus reportes.
 
 ## 🎨 3. Paleta de colores
 
@@ -80,16 +80,16 @@ El diseño sigue el Figma y la identidad visual del CIIS UPAEP:
 
 ---
 
-## 📋 4. Requerimientos
+## 4. Requerimientos
 
 ### Funcionales (por tipo de operación, igual que en el sitio web)
 
 | Operación | Qué se puede hacer en la app |
 | :--- | :--- |
-| ➕ **Alta** | Registro de estudiante, aliado, mentor y proyecto; asignar mentoría; agendar asesoría; subir evidencia; **registrar implementación con foto** |
-| 🔍 **Consulta** | Proyectos con filtro por estatus, detalle del proyecto (integrantes, aliados, mentorías, implementaciones y fotos), mentorías, reportes con gráficas y **reportes descargables** |
-| ✏️ **Modificación** | Avance por objetivos (marcar o agregar objetivos), foto de perfil, activar cuenta, apoyar un proyecto |
-| 🗑️ **Baja** | Archivar proyecto y cancelar asesoría |
+| **Alta** | Registro de estudiante, aliado, mentor y proyecto; asignar mentoría; agendar asesoría; subir evidencia; **registrar implementación con foto** |
+| **Consulta** | Proyectos con filtro por estatus, detalle del proyecto (integrantes, aliados, mentorías, implementaciones y fotos), mentorías, reportes con gráficas y **reportes descargables** |
+| **Modificación** | Avance por objetivos (marcar o agregar objetivos), foto de perfil, activar cuenta, apoyar un proyecto |
+| **Baja** | Archivar proyecto y cancelar asesoría |
 
 Además:
 * **3 roles** (coordinación, alumno y aliado) y una vista pública con el catálogo de proyectos.
@@ -99,7 +99,7 @@ Además:
 * Los **programas** son los mismos de la base `ciis`: BL-UAF, UAF, BL, Beca Liderazgo, Voluntaria, Voluntario, Voluntarios y Sin programa.
 
 <details>
-<summary><b>🔍 Haz clic para ver los Requerimientos No Funcionales</b></summary>
+<summary><b>Haz clic para ver los Requerimientos No Funcionales</b></summary>
 
 <br>
 
@@ -115,7 +115,7 @@ Además:
 
 ---
 
-## 🗂️ 5. Modelo Entidad-Relación (E-R)
+## 5. Modelo Entidad-Relación (E-R) (img generada de workbench adjunta en archivos)
 
 La base `ciis` se diseñó y validó en la materia de **Base de Datos Avanzadas**. Tiene **16 tablas**: 12 del modelo base (`01_ciis.sql`) y 4 que agrega el sitio web (`02_web.sql`: `usuario`, `objetivo`, `evidencia` y `proyecto_web`).
 
@@ -243,7 +243,7 @@ erDiagram
 ```
 
 <details>
-<summary><b>📖 Haz clic para ver qué guarda cada tabla</b></summary>
+<summary><b>Hacer clic aquí para ver qué guarda cada tabla</b></summary>
 
 <br>
 
@@ -270,13 +270,13 @@ erDiagram
 
 ---
 
-## 🛠️ 6. Proceso de desarrollo
+## 6. Proceso de desarrollo
 
 ```mermaid
 flowchart LR
-    A["🗄️ Base de datos<br/>ciis · 16 tablas"] --> B["🎨 Diseño<br/>Figma"]
-    B --> C["🌐 Sitio web<br/>ciis-web"]
-    C --> D["📱 App Android<br/>CIIS Registry"]
+    A["Base de datos<br/>ciis · 16 tablas"] --> B["Diseño<br/>Figma"]
+    B --> C["Sitio web<br/>ciis-web"]
+    C --> D["App Android<br/>CIIS Registry"]
 ```
 
 1. **Base de datos**: se diseñó y validó la base `ciis` (16 tablas, vistas y procedimientos) en la materia de Base de Datos Avanzadas.
@@ -284,7 +284,7 @@ flowchart LR
 3. **Sitio web**: se publicó **ciis-web** en un servidor Linux (Ubuntu + Nginx + PHP-FPM + MySQL) en la materia de Sistemas Operativos.
 4. **App Android** (este proyecto): se programaron las pantallas del Figma y se acoplaron las funciones del sitio web: carga de fotos, reportes descargables, los mismos programas y los mismos roles. Se usaron los temas vistos en clase: Activities, layouts XML con ConstraintLayout, listeners, intents explícitos e implícitos, permisos y SQLite.
 
-## 🧰 7. Herramientas
+## 7. Herramientas
 
 | Herramienta | Para qué |
 | :--- | :--- |
@@ -297,7 +297,7 @@ flowchart LR
 
 ---
 
-## 🚀 8. Cómo abrirlo en Android Studio
+## 8. Cómo abrirlo en Android Studio
 
 1. Descomprime la carpeta `CIISRegistry`.
 2. En Android Studio: **File → Open…** y elige la carpeta `CIISRegistry` (la que tiene `settings.gradle.kts`).
@@ -307,9 +307,9 @@ flowchart LR
 4. Crea o elige un emulador en **Device Manager** (por ejemplo, Pixel 8 con API 34 o 35), o conecta tu teléfono con la depuración USB activada.
 5. Presiona **Run ▶**.
 
-> 📌 Requisitos: Android Studio Ladybug (2024.2) o más nuevo, JDK 17 (ya viene con Android Studio). El teléfono debe tener Android 8.0 o más nuevo.
+> Requisitos: Android Studio Ladybug (2024.2) o más nuevo, JDK 17 (ya viene con Android Studio). El teléfono debe tener Android 8.0 o más nuevo.
 
-## 🔑 9. Cuentas para probar la app
+## 9. Cuentas para probar la app
 
 Cualquiera puede entrar con estas cuentas para probar la app:
 
@@ -325,24 +325,24 @@ Estas cuentas se crean en la tabla `usuarios` de SQLite la primera vez que se ab
 
 **Alumnos y aliados nuevos**: la coordinación los registra (pestaña **Registro**). Después, la persona entra a **Iniciar sesión → «¿Primera vez? Activa tu cuenta»**, escribe su correo y crea su contraseña. Un alumno con estatus *En pausa* no puede activar su cuenta ni entrar.
 
-## ⚠️ 10. Limitación: recuperar la cuenta por correo
+## 10. Limitación: recuperar la cuenta por correo
 
 > [!NOTE]
 > La opción **«¿No logras ingresar?»** muestra el formulario, pero **por ahora no envía el correo** para recuperar la cuenta; solo avisa que la función está en desarrollo.
 
 Esto es porque son **dos tareas diferentes**, independientes de la base de datos:
 
-1. ✅ **Dar de alta** al alumno y capturar su información, creando su registro en la base de datos. *Esto sí está hecho.*
-2. ⏳ **Mandarle el correo** para completar el registro o recuperar su contraseña. *Es una tarea aparte.*
+1. **Dar de alta** al alumno y capturar su información, creando su registro en la base de datos. *Esto sí está hecho.*
+2. **Mandarle el correo** para completar el registro o recuperar su contraseña. *Es una tarea aparte que decidimos no implementar aún dada la complejidad de implementación.*
 
 Para el envío del correo hay dos caminos: cederle la responsabilidad a otra app con un **Intent** (por ejemplo, abrir la app de correo del teléfono con un `IntentFilter`), o **programar nosotros el envío automático**, lo que requiere un servidor de correo y más pasos. Para cumplir los requisitos del proyecto basta con **crear los usuarios en la base de datos**, y no nos da tiempo de hacer todos los pasos del envío automático, así que por ahora no se incluye como funcional. Mientras tanto, la coordinación ayuda a restablecer las cuentas.
 
 ---
 
-## 📱 11. Pantallas del Figma
+## 11. Pantallas del Figma
 
 <details>
-<summary><b>🖼️ Haz clic para ver qué pantalla del Figma corresponde a cada parte de la app</b></summary>
+<summary><b>Haz clic para ver qué pantalla del Figma corresponde a cada parte de la app</b></summary>
 
 <br>
 
@@ -366,7 +366,7 @@ Para el envío del correo hay dos caminos: cederle la responsabilidad a otra app
 
 </details>
 
-### ✅ Reglas que ya funcionan
+### Reglas que ya funcionan
 
 * **Avance por objetivos** (nota del Figma): No iniciado 0 %, En progreso según los objetivos cumplidos, Archivado 0 %, Terminado 100 %. En la pestaña *Progreso*, el alumno marca objetivos o agrega nuevos, y el avance se recalcula.
 * **Validaciones del registro**: matrícula con formato A + números y sin repetir, correo válido, aliado y mentor sin repetir, tema repetido, fechas del proyecto, al menos un integrante, y aviso si un estudiante ya tiene proyecto.
@@ -376,7 +376,7 @@ Para el envío del correo hay dos caminos: cederle la responsabilidad a otra app
 * **Calendar** (nota del Figma): al asignar o agendar una mentoría, el botón **Agregar a Calendar** abre el calendario del teléfono con el evento listo y el correo del mentor como invitado.
 * **Reporte**: *Descargar reporte* guarda un archivo `.csv` en **Descargas**, que se abre en Excel.
 
-## 🔗 12. Funciones acopladas del sitio web
+## 12. Funciones acopladas del sitio web
 
 | Sitio web (ciis-web) | En la app |
 | :--- | :--- |
@@ -387,18 +387,18 @@ Para el envío del correo hay dos caminos: cederle la responsabilidad a otra app
 | Descargar archivo | El CSV se guarda en **Descargas** y se puede **compartir** (correo, WhatsApp, Drive…) con un intent implícito `ACTION_SEND` |
 | Programas de la tabla `programa` | La lista de **Programa** en *Alta de estudiante* |
 
-## 🔐 13. Permisos de Android
+## 13. Permisos de Android
 
 Al tocar el **símbolo de la imagen** en *Registrar implementación* (o los botones Cámara / Galería), la app pide permiso al sistema con `ActivityCompat.requestPermissions()`:
 
 | Permiso | Para qué |
 | :--- | :--- |
-| 📷 `CAMERA` | Tomar la foto del proyecto con la cámara |
-| 🖼️ `READ_MEDIA_IMAGES` (Android 13+) / `READ_EXTERNAL_STORAGE` (Android 8–12) | Elegir una foto de la galería |
+| `CAMERA` | Tomar la foto del proyecto con la cámara |
+| `READ_MEDIA_IMAGES` (Android 13+) / `READ_EXTERNAL_STORAGE` (Android 8–12) | Elegir una foto de la galería |
 
 La respuesta llega en `onRequestPermissionsResult()`. Si el usuario acepta, se abre la cámara o la galería; si no, la app explica que puede activarlo en *Ajustes → Apps → CIIS Registry → Permisos*. En Android 14, dar acceso solo a "algunas fotos" también cuenta como permitido. La foto de perfil y las evidencias (pantallas de Compose) también piden el permiso de cámara antes de abrirla.
 
-## 📸 14. Registrar implementación (alumno)
+## 14. Registrar implementación (alumno)
 
 En **Mi perfil** (pestaña General del alumno) y en la pestaña *Progreso* está el botón **Registrar implementación**. Abre `RegistrarImplementacionActivity` con un intent explícito. Ahí el alumno:
 
@@ -418,7 +418,7 @@ Al guardar, la implementación y su foto se agregan a las evidencias del proyect
 
 El ciclo de vida de `MainActivity` se puede ver en **Logcat**, filtrando por `CIIS`.
 
-## 🗄️ 15. Base de datos SQLite (en el teléfono)
+## 15. Base de datos SQLite (en el teléfono)
 
 La app guarda sus datos en una base **SQLite** dentro del teléfono (`ciis.db`), con la clase `data/BaseDatos.java`, que extiende `SQLiteOpenHelper`. Es una versión reducida del modelo `ciis` de arriba:
 
@@ -491,9 +491,9 @@ erDiagram
 * **Registrar implementación**: `RegistrarImplementacionActivity` guarda la foto como JPG en la carpeta privada de la app (`getFilesDir()`) e inserta la fila con su ruta.
 * **Al abrir la app**: `Repo.iniciar()` lee cada tabla y carga los datos en las pantallas.
 
-> 🧪 Para comprobarlo, registra una implementación, cierra la app por completo (deslízala en recientes) y vuelve a entrar. La implementación sigue ahí. Los datos de ejemplo (proyectos y mentorías de muestra) no se guardan en la base.
+> Para comprobarlo, registra una implementación, cierra la app por completo (deslízala en recientes) y vuelve a entrar. La implementación sigue ahí. Los datos de ejemplo (proyectos y mentorías de muestra) no se guardan en la base.
 
-## 📁 16. Estructura del código
+## 16. Estructura del código
 
 ```
 app/src/main/java/mx/upaep/ciisregistry/
@@ -514,7 +514,7 @@ app/src/main/res/layout/
 └── activity_registrar_implementacion.xml   formulario de implementación
 ```
 
-## 📝 17. Pendiente o diferente al Figma
+## 17. Pendiente o diferente al Figma
 
 * **Datos**: los de ejemplo viven en memoria. En SQLite se guardan las cuentas, lo que registra la coordinación y las implementaciones. Las evidencias de *Subir evidencia*, las mentorías nuevas y los objetivos marcados todavía se borran al cerrar la app. Para compartir datos con el sitio web, se cambiaría `Repo` por llamadas a una API del servidor.
 * **Recuperar cuenta por correo**: no disponible por ahora (ver la sección [Limitación](#️-10-limitación-recuperar-la-cuenta-por-correo)).
