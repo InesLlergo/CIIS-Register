@@ -1,0 +1,12 @@
+<resources>
+    <!-- Paleta del modo claro del Figma (igual que ui/theme/Theme.kt) -->
+    <color name="fondo">#F5F5F5</color>
+    <color name="tarjeta">#FFFFFF</color>
+    <color name="texto">#1F2433</color>
+    <color name="suave">#7A7F8C</color>
+    <color name="borde">#E3E3E8</color>
+    <color name="rojo">#D32F2F</color>
+    <color name="rojo_suave">#FCE9E9</color>
+    <color name="pizarra">#4A5163</color>
+    <color name="verde">#2E9B57</color>
+</resources>

@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- Tablero con palomita: seguimiento de proyectos -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M38,34h32a4,4 0,0 1,4 4v34a4,4 0,0 1,-4 4h-32a4,4 0,0 1,-4 -4v-34a4,4 0,0 1,4 -4z"/>
+    <path android:fillColor="#D32F2F"
+        android:pathData="M46,30h16a2,2 0,0 1,2 2v4a2,2 0,0 1,-2 2h-16a2,2 0,0 1,-2 -2v-4a2,2 0,0 1,2 -2z"/>
+    <path android:strokeColor="#D32F2F" android:strokeWidth="5"
+        android:strokeLineCap="round" android:strokeLineJoin="round"
+        android:pathData="M44,56l7,7l13,-14"/>
+</vector>

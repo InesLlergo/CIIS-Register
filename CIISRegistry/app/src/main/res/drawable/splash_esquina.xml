@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Esquina del splash: triángulo gris pegado a la derecha y una línea roja curva -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="164dp"
+    android:height="336dp"
+    android:viewportWidth="164"
+    android:viewportHeight="336">
+    <path
+        android:fillColor="@color/pizarra"
+        android:pathData="M164,0 L164,336 L0,336 Z" />
+    <path
+        android:strokeColor="@color/rojo"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M84,52 Q98,200 8,330" />
+</vector>

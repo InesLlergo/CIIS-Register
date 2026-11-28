@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    activity_registrar_implementacion.xml
+    Formulario para registrar una implementación del proyecto.
+    ScrollView para poder bajar, y dentro un ConstraintLayout:
+    cada elemento se acomoda debajo del anterior (layout_constraintTop_toBottomOf).
+    Lo controla RegistrarImplementacionActivity.java.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:fitsSystemWindows="true"
+    tools:context=".RegistrarImplementacionActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+    <TextView
+        android:id="@+id/txtVolver"
+        android:layout_width="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="@string/impl_volver"
+        android:textColor="@color/rojo"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="0dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/impl_titulo"
+        android:textColor="@color/texto"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtVolver" />
+    <TextView
+        android:id="@+id/txtProyecto"
+        android:layout_width="0dp"
+        android:textColor="@color/rojo"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitulo" />
+    <TextView
+        android:id="@+id/txtSubtitulo"
+        android:layout_width="0dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/impl_subtitulo"
+        android:textColor="@color/suave"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtProyecto" />
+    <TextView
+        android:id="@+id/lblTipo"
+        style="@style/Etiqueta"
+        android:layout_width="0dp"
+        android:text="@string/impl_tipo"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtSubtitulo" />
+    <Spinner
+        android:id="@+id/spTipo"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:background="@drawable/bg_campo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblTipo" />
+    <TextView
+        android:id="@+id/lblActividad"
+        style="@style/Etiqueta"
+        android:layout_width="0dp"
+        android:text="@string/impl_actividad"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spTipo" />
+    <EditText
+        android:id="@+id/etActividad"
+        style="@style/Campo"
+        android:layout_width="0dp"
+        android:hint="@string/impl_actividad_hint"
+        android:inputType="textCapSentences"
+        android:maxLength="80"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblActividad" />
+    <TextView
+        android:id="@+id/lblLugar"
+        style="@style/Etiqueta"
+        android:layout_width="0dp"
+        android:text="@string/impl_lugar"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etActividad" />
+    <EditText
+        android:id="@+id/etLugar"
+        style="@style/Campo"
+        android:layout_width="0dp"
+        android:inputType="textCapWords"
+        android:maxLength="50"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblLugar" />
+    <TextView
+        android:id="@+id/lblFecha"
+        style="@style/Etiqueta"
+        android:layout_width="0dp"
+        android:text="@string/impl_fecha"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etLugar" />
+    <TextView
+        android:id="@+id/txtFecha"
+        style="@style/Campo"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblFecha" />
+    <TextView
+        android:id="@+id/lblBeneficiarios"
+        style="@style/Etiqueta"
+        android:layout_width="0dp"
+        android:text="@string/impl_beneficiarios"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtFecha" />
+    <EditText
+        android:id="@+id/etBeneficiarios"
+        style="@style/Campo"
+        android:layout_width="0dp"
+        android:inputType="number"
+        android:maxLength="5"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblBeneficiarios" />
+    <TextView
+        android:id="@+id/lblFoto"
+        style="@style/Etiqueta"
+        android:layout_width="0dp"
+        android:text="@string/impl_foto"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etBeneficiarios" />
+    <TextView
+        android:id="@+id/txtFotoAyuda"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:text="@string/impl_foto_ayuda"
+        android:textColor="@color/suave"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblFoto" />
+
+    <ImageView
+        android:id="@+id/imgFoto"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_campo"
+        android:contentDescription="@string/impl_foto"
+        android:scaleType="center"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtFotoAyuda" />
+
+    <!-- Botones de foto: cámara y galería (intents implícitos) -->
+    <Button
+        android:id="@+id/btnCamara"
+        style="@style/BotonSecundario"
+        android:layout_width="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/impl_tomar_foto"
+        app:layout_constraintEnd_toStartOf="@id/btnGaleria"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgFoto" />
+
+    <Button
+        android:id="@+id/btnGaleria"
+        style="@style/BotonSecundario"
+        android:layout_width="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/impl_galeria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnCamara"
+        app:layout_constraintTop_toBottomOf="@id/imgFoto" />
+
+    <TextView
+        android:id="@+id/lblComentario"
+        style="@style/Etiqueta"
+        android:layout_width="0dp"
+        android:text="@string/impl_comentario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCamara" />
+
+    <EditText
+        android:id="@+id/etComentario"
+        style="@style/Campo"
+        android:layout_width="0dp"
+        android:gravity="top|start"
+        android:hint="@string/impl_comentario_hint"
+        android:inputType="textMultiLine|textCapSentences"
+        android:maxLength="200"
+        android:minLines="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblComentario" />
+
+    <TextView
+        android:id="@+id/txtContador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/impl_contador_inicial"
+        android:textColor="@color/suave"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etComentario" />
+
+    <CheckBox
+        android:id="@+id/cbConfirmo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/impl_confirmo"
+        android:textColor="@color/texto"
+        app:buttonTint="@color/rojo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtContador" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        style="@style/BotonPrimario"
+        android:layout_width="0dp"
+        android:layout_marginTop="14dp"
+        android:enabled="false"
+        android:text="@string/impl_guardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cbConfirmo" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        style="@style/BotonSecundario"
+        android:layout_width="0dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/impl_cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnGuardar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

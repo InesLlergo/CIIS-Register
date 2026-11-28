@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Android 12+: el splash del sistema también es claro, así enlaza con el nuestro -->
+    <style name="Theme.CIISRegistry.Splash" parent="Theme.CIISRegistry">
+        <item name="android:windowBackground">@color/fondo</item>
+        <item name="android:statusBarColor">@color/fondo</item>
+        <item name="android:navigationBarColor">@color/fondo</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowSplashScreenBackground">@color/fondo</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/fondo</item>
+    </style>
+</resources>

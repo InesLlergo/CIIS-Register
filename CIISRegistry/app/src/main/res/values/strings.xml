@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">CIIS Registry</string>
+
+    <!-- Splash (MainActivity) -->
+    <string name="portada_logo"><b>CIIS</b> REGISTRY</string>
+    <string name="portada_frase">Seguimiento de Innovación e Impacto</string>
+
+    <!-- Registrar implementación -->
+    <string name="impl_titulo">Registrar implementación</string>
+    <string name="impl_subtitulo">Cuenta qué hizo tu equipo en la comunidad y sube una foto como evidencia.</string>
+    <string name="impl_tipo">Tipo de actividad *</string>
+    <string name="impl_actividad">¿Qué hicieron? *</string>
+    <string name="impl_actividad_hint">Ej. Taller de composta con 10 familias</string>
+    <string name="impl_lugar">Lugar o comunidad *</string>
+    <string name="impl_fecha">Fecha *</string>
+    <string name="impl_beneficiarios">Personas beneficiadas *</string>
+    <string name="impl_foto">Foto del proyecto *</string>
+    <string name="impl_foto_ayuda">Toca la imagen para tomar una foto o elegirla de la galería. La app te pedirá permiso.</string>
+    <string name="impl_tomar_foto">Cámara</string>
+    <string name="impl_galeria">Galería</string>
+    <string name="impl_contador_inicial">0/200</string>
+    <string name="impl_comentario">Comentario (opcional)</string>
+    <string name="impl_comentario_hint">¿Cómo les fue? ¿Qué aprendieron?</string>
+    <string name="impl_confirmo">Confirmo que la información es correcta</string>
+    <string name="impl_guardar">Guardar implementación</string>
+    <string name="impl_cancelar">Cancelar</string>
+    <string name="impl_volver">‹ Volver a mi perfil</string>
+</resources>

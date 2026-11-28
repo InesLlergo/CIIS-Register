@@ -1,0 +1,18 @@
+<resources>
+    <!-- Tema AppCompat (necesario para AppCompatActivity) sin barra de título -->
+    <style name="Theme.CIISRegistry" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/rojo</item>
+        <item name="colorPrimaryDark">@color/rojo</item>
+        <item name="colorAccent">@color/rojo</item>
+        <item name="android:windowBackground">@color/fondo</item>
+        <item name="android:statusBarColor">@color/rojo</item>
+    </style>
+
+    <!-- Splash (MainActivity): fondo claro como en el Figma -->
+    <style name="Theme.CIISRegistry.Splash">
+        <item name="android:windowBackground">@color/fondo</item>
+        <item name="android:statusBarColor">@color/fondo</item>
+        <item name="android:navigationBarColor">@color/fondo</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>
